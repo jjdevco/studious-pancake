@@ -1,9 +1,6 @@
 import * as React from "react";
+import Home from "@/screens/Home";
 
-const IndexPage = () => (
-  <div>
-    <h1>Hello Next.js 👋</h1>
-  </div>
-);
+const IndexPage = () => <Home />;
 
 export default IndexPage;
