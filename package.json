@@ -1,0 +1,32 @@
+{
+  "name": "studious-pancake",
+  "version": "1.0.0",
+  "description": "An app that shows git commits history on the same project that it is developed.",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "typescript": "4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjdevco/studious-pancake.git"
+  },
+  "author": "Jose Jimenez",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jjdevco/studious-pancake/issues"
+  },
+  "homepage": "https://github.com/jjdevco/studious-pancake#readme"
+}
