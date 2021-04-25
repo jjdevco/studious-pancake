@@ -5,13 +5,14 @@ import {
   useTheme,
   chakra,
   HStack,
+  Skeleton,
 } from "@chakra-ui/react";
 
 export const container: () => HTMLChakraProps<typeof Grid> = () => ({
   width: "100vw",
   height: "100vh",
-  gridTemplateAreas: `"navbar" "title" "description" "branches" "commits" "footer"`,
-  gridTemplateRows: "auto auto auto auto 1fr auto",
+  gridTemplateAreas: `"navbar" "title" "description" "timestamps" "branches" "commits" "footer"`,
+  gridTemplateRows: "auto auto auto auto auto 1fr auto",
   gridAutoColumns: "1fr",
 });
 
@@ -21,19 +22,47 @@ export const navbar: () => HTMLChakraProps<typeof HStack> = () => ({
   padding: "10px 30px 20px",
 });
 
+export const titleSkeleton: () => HTMLChakraProps<typeof Skeleton> = () => ({
+  gridArea: "title",
+  height: "32px",
+  maxWidth: "400px",
+  width: "100%",
+  margin: "10px auto",
+});
+
 export const title: () => HTMLChakraProps<typeof Text> = () => ({
   gridArea: "title",
+  width: "inherit",
   textAlign: "center",
   fontSize: "2.5rem",
   as: "h1",
 });
 
+export const descriptionSkeleton: () => HTMLChakraProps<
+  typeof Skeleton
+> = () => ({
+  gridArea: "description",
+  height: "24px",
+  maxWidth: "250px",
+  width: "100%",
+  margin: "auto",
+});
+
 export const description: () => HTMLChakraProps<typeof Text> = () => ({
   gridArea: "description",
+  width: "inherit",
   textAlign: "center",
   fontSize: "1.4rem",
   padding: "5px 35px 10px",
   as: "h2",
+});
+
+export const timestamps: () => HTMLChakraProps<typeof Text> = () => ({
+  gridArea: "timestamps",
+  width: "inherit",
+  textAlign: "center",
+  fontSize: "1.2rem",
+  padding: "5px 35px 10px",
 });
 
 export const footer: () => HTMLChakraProps<typeof Text> = () => {

@@ -25,6 +25,7 @@
       "@/components/*": ["components/*"],
       "@/hooks/*": ["hooks/*"],
       "@/context/*": ["context/*"],
+      "@/queries/*": ["queries/*"],
       "@/utils/*": ["utils/*"],
       "@/theme/*": ["theme/*"]
     }
