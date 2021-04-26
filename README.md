@@ -38,3 +38,8 @@ You will need to create an GitHub account and generete a personal token through 
 https://github.com/settings/tokens/new
 
 Not scopes are required, and you must set them all to false. Be carefully with how you expose this token, everything in your GitHub account can be manipuleted.
+
+## Live version
+
+You can see this app running in this link:
+https://studious-pancake.vercel.app/
