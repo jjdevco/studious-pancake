@@ -13,6 +13,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@octokit/graphql": "^4.6.1",
+    "@react-hook/throttle": "^2.2.0",
     "focus-visible": "^5.2.0",
     "framer-motion": "^4.1.9",
     "next": "latest",

@@ -41,7 +41,7 @@ function useSafeDispatch(dispatch: any) {
 
 export function useAsyncFetch(
   initialState: any,
-  reducer: Reducer = asyncReducer
+  reducer: ReducerProps = asyncReducer
 ) {
   const [state, unsafeDispatch] = React.useReducer(reducer, {
     status: "idle",
@@ -78,11 +78,12 @@ export function useAsyncFetch(
     status,
     data,
     run,
+    dispatch,
   };
 }
 
 // *** Types ***
-export type Reducer = (
+export type ReducerProps = (
   _state: any,
   action: any
 ) => {

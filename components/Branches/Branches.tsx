@@ -25,7 +25,7 @@ function Branches() {
     >
       <TabList>
         {branches.map((branch) => (
-          <Tab key={branch.cursor}>{branch.name}</Tab>
+          <Tab key={branch.name}>{branch.name}</Tab>
         ))}
       </TabList>
     </Tabs>

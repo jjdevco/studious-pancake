@@ -8,7 +8,7 @@ import {
   Types as BranchesActions,
 } from "@/hooks/useBranches";
 import getRepository from "@/queries/getRepository";
-import formatBranches from "@/utils/formatBranches";
+import formatBranchesResponse from "@/utils/formatBranchesResponse";
 import * as stylesProps from "./styles";
 
 import Branches from "@/components/Branches";
@@ -33,7 +33,7 @@ function Home() {
     if (data?.repository.refs.nodes) {
       branchesDispatch({
         type: BranchesActions.setBranches,
-        branches: formatBranches(data.repository.refs.nodes),
+        branches: formatBranchesResponse(data.repository.refs.nodes),
       });
     }
   }, [data]);
@@ -78,7 +78,7 @@ function Home() {
         </>
       )}
 
-      {error && (
+      {status === "rejected" && (
         <ErrorCard
           gridArea="commits"
           message={error?.message ?? "Something went wrong :-("}

@@ -12,16 +12,6 @@ const getRepository = (owner: string, repo: string) =>
         refs(first: 20, refPrefix: "refs/") {
           nodes {
             name
-            target {
-              ... on Commit {
-                history {
-                  pageInfo {
-                    endCursor
-                  }
-                  totalCount
-                }
-              }
-            }
           }
         }
       }

@@ -76,8 +76,6 @@ interface IBranchesProvider {
 
 interface IBranch {
   name: string;
-  cursor: string;
-  totalCommits: number;
 }
 
 interface IBranchesState {
